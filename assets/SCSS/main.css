@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header .nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav_logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  position: relative;
+}
+header .nav_logo::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 9px;
+  right: -5px;
+  background-color: rgb(222, 58, 58);
+}
+header .nav-right {
+  display: flex;
+  align-items: center;
+}
+header .nav-right .nav_links {
+  display: flex;
+  align-items: center;
+}
+header .nav-right .nav_links .list {
+  display: flex;
+}
+@media only screen and (max-width: 992px) {
+  header .nav-right .nav_links .list {
+    display: none;
+  }
+}
+header .nav-right .nav_links .nav_links_item {
+  padding-right: 20px;
+}
+header .nav-right .nav_links .nav_links_item a {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: rgb(87, 86, 86);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+header .nav-right .nav_links .nav_links_item a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px rgb(222, 58, 58);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+header .nav-right .nav_links .nav_links_item a:hover {
+  font-weight: 500;
+  color: black;
+}
+header .nav-right .nav_links .nav_links_item a:hover:after {
+  transform: scaleX(1);
+}
+header .nav-right .nav_links .nav_links_item .home {
+  font-weight: 600;
+  color: black;
+}
+header .nav-right .bars {
+  color: black;
+  font-size: 25px;
+  display: none;
+  padding-left: 10px;
+}
+header .nav .btn {
+  color: white;
+  background-color: rgb(222, 58, 58);
+  padding: 10px 20px;
+  margin-left: 22px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+header .nav .btn:hover {
+  background-color: rgb(245, 89, 89);
+}
+@media only screen and (max-width: 992px) {
+  header .nav .bars {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 111px) {
+  header .container {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */
